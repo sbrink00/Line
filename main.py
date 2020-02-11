@@ -9,7 +9,7 @@ draw_line(0, 0, XRES-1, YRES-1, s, c)
 draw_line(0, 0, XRES-1, YRES / 2, s, c)
 draw_line(XRES-1, YRES-1, 0, YRES / 2, s, c)
 
-#octants 8 and 4
+# #octants 8 and 4
 c[BLUE] = 255;
 draw_line(0, YRES-1, XRES-1, 0, s, c);
 draw_line(0, YRES-1, XRES-1, YRES/2, s, c);
@@ -34,7 +34,8 @@ draw_line(0, YRES/2, XRES-1, YRES/2, s, c);
 draw_line(XRES/2, 0, XRES/2, YRES-1, s, c);
 
 
-display(s)
+#display(s)
 save_ppm(s, 'binary.ppm')
 save_ppm_ascii(s, 'ascii.ppm')
 save_extension(s, 'img.png')
+print("image file name: img.png")
